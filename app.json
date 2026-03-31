@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Save the Fridge",
+    "slug": "save-the-fridge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "save-the-fridge",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F97316"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.savethefridge.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Save the Fridge needs camera access to take photos of your food items.",
+        "NSPhotoLibraryUsageDescription": "Save the Fridge needs photo library access to add images of your food items."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F97316"
+      },
+      "package": "com.savethefridge.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Save the Fridge needs access to your photos to add images of food items.",
+          "cameraPermission": "Save the Fridge needs camera access to take photos of food items."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#F97316"
+        }
+      ]
+    ]
+  }
+}
