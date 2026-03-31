@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
 import { differenceInDays, parseISO } from 'date-fns';
 import { Badge } from '@/components/ui/Badge';
 

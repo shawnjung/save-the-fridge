@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, FlatList, Text, TextInput, StyleSheet, Alert } from 'react-native';
+import { View, FlatList, Text, TextInput, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Button } from '@/components/ui/Button';
 import { MingleSessionCard } from '@/components/mingle/MingleSessionCard';
